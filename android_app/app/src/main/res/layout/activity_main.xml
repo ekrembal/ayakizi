@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/co_ayakizi_tv"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:text="Barcode Text"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urun_adi_tv" />
+
+    <ImageView
+        android:id="@+id/h2o_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/co2_image"
+        app:srcCompat="@drawable/water_icon" />
+
+    <TextView
+        android:id="@+id/h2o_ayakizi_tv"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/h2o_image"
+        app:layout_constraintTop_toBottomOf="@+id/co_ayakizi_tv" />
+
+    <ImageView
+        android:id="@+id/co2_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/co_ayakizi_tv"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urun_adi_tv"
+        app:srcCompat="@drawable/co2_icon" />
+
+    <TextView
+        android:id="@+id/urun_adi_tv"
+        android:layout_width="299dp"
+        android:layout_height="56dp"
+        android:text="Barkodu okutunuz"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/surface_view"
+        tools:layout_editor_absoluteX="56dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
